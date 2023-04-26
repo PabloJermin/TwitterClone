@@ -1,0 +1,12 @@
+{% extends 'blog/index.html' %}
+{% block content %}
+
+<h1> the home sections</h1>
+
+{% comment %} {% for p in post %} {% endcomment %}
+<h2>{{post.title}} </h2>
+<p>{{post.content}}</p>
+this was posted by <span>{{post.author}}</span>
+{% comment %} {% endfor %} {% endcomment %}
+
+{% endblock content %}
